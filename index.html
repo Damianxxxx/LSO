@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a91f25">
+  <meta name="description" content="Informacje o kursie lektorskim organizowanym przez Dekanat Strzyżowski w dniach 23–24 października 2026 r.">
+  <title>Kurs lektorski | Dekanat Strzyżowski</title>
+  <style>
+    :root {
+      --red: #b51f27;
+      --red-dark: #85191f;
+      --ink: #20242b;
+      --muted: #5e6269;
+      --cream: #fbf8f2;
+      --white: #fff;
+      --line: #e8dfd5;
+      --shadow: 0 18px 48px rgba(42, 27, 22, .10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--cream); color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--red-dark); }
+    .topline { height: 7px; background: linear-gradient(90deg, #181818, var(--red), #e44a40); }
+    .wrap { width: min(1080px, calc(100% - 36px)); margin: auto; }
+    header { padding: 22px 0; }
+    .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; }
+    .brand-mark {
+      width: 52px; height: 52px; display: grid; place-items: center; flex: 0 0 auto;
+      border: 2px solid var(--red); border-radius: 15px; color: var(--red); font-size: 27px; font-weight: 900;
+    }
+    .brand strong { display: block; font-size: 1rem; line-height: 1.25; }
+    .brand span { display: block; color: var(--muted); font-size: .88rem; }
+    .hero {
+      position: relative; overflow: hidden; border-radius: 28px; color: white;
+      background: radial-gradient(circle at 88% 10%, rgba(255,255,255,.14), transparent 27%),
+                  linear-gradient(125deg, #292a2e 0%, #292a2e 35%, #951c23 35%, #bd242b 100%);
+      padding: clamp(30px, 6vw, 70px); box-shadow: var(--shadow);
+    }
+    .hero:after { content: "✝"; position: absolute; right: 5%; bottom: -90px; font-size: clamp(180px, 30vw, 340px); color: rgba(255,255,255,.07); line-height: 1; pointer-events: none; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; font-weight: 800; opacity: .86; }
+    h1 { font-size: clamp(2.6rem, 7vw, 5.4rem); line-height: .98; letter-spacing: -.045em; margin: 14px 0 20px; max-width: 760px; }
+    .hero p { max-width: 650px; font-size: clamp(1.05rem, 2vw, 1.25rem); color: rgba(255,255,255,.9); }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .pill { display: inline-flex; gap: 9px; align-items: center; padding: 10px 15px; border: 1px solid rgba(255,255,255,.32); border-radius: 999px; background: rgba(255,255,255,.09); font-weight: 700; }
+    main { padding: 28px 0 64px; }
+    .grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 22px; margin-top: 22px; }
+    .card { background: var(--white); border: 1px solid var(--line); border-radius: 22px; padding: clamp(22px, 4vw, 34px); box-shadow: 0 8px 28px rgba(42,27,22,.04); }
+    h2 { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.2; margin: 0 0 15px; letter-spacing: -.025em; }
+    h3 { margin: 0 0 8px; font-size: 1.08rem; }
+    p { margin: 0 0 14px; }
+    .muted { color: var(--muted); }
+    .facts { display: grid; gap: 16px; }
+    .fact { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; }
+    .icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 13px; background: #fff0ef; color: var(--red); font-size: 21px; }
+    .fact strong { display: block; }
+    .list { padding-left: 22px; margin: 12px 0 0; }
+    .list li { padding: 4px 0; }
+    .callout { margin-top: 22px; padding: 20px 22px; border-left: 4px solid var(--red); border-radius: 0 14px 14px 0; background: #fff0ef; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
+    .step { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: #fffdfa; }
+    .step b { display: block; color: var(--red); font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 7px; }
+    .faq details { border-top: 1px solid var(--line); padding: 15px 0; }
+    .faq details:last-child { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; font-weight: 750; }
+    .notice { font-size: .9rem; color: var(--muted); }
+    footer { padding: 26px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    .btn { display: inline-block; padding: 12px 18px; border-radius: 12px; background: var(--red); color: white; font-weight: 800; text-decoration: none; }
+    .btn:hover { background: var(--red-dark); }
+    /* Układ na telefony */
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 28px, 620px); }
+      header { padding: 15px 0; }
+      .brand { gap: 10px; }
+      .brand-mark { width: 44px; height: 44px; border-radius: 12px; font-size: 23px; }
+      .brand strong { font-size: .92rem; }
+      .brand span { font-size: .78rem; line-height: 1.35; }
+      .hero {
+        border-radius: 20px;
+        padding: 28px 22px 25px;
+        background: radial-gradient(circle at 95% 5%, rgba(255,255,255,.13), transparent 30%),
+                    linear-gradient(145deg, #292a2e 0%, #292a2e 28%, #951c23 28%, #bd242b 100%);
+      }
+      .hero:after { right: -5px; bottom: -35px; font-size: 150px; }
+      .eyebrow { font-size: .69rem; letter-spacing: .12em; }
+      h1 { font-size: clamp(2.7rem, 13vw, 4.2rem); margin: 13px 0 16px; }
+      .hero p { font-size: 1rem; line-height: 1.55; }
+      .hero-meta { display: grid; grid-template-columns: 1fr; gap: 9px; margin-top: 21px; }
+      .pill { justify-content: flex-start; border-radius: 12px; padding: 10px 12px; font-size: .91rem; }
+      main { padding: 17px 0 34px; }
+      .grid { grid-template-columns: 1fr; gap: 14px; margin-top: 14px; }
+      .card { border-radius: 17px; padding: 21px 18px; }
+      h2 { font-size: 1.48rem; margin-bottom: 12px; }
+      h3 { font-size: 1.02rem; }
+      body { font-size:  .97rem; }
+      .facts { gap: 15px; }
+      .fact { grid-template-columns: 39px minmax(0, 1fr); gap: 10px; }
+      .icon { width: 39px; height: 39px; border-radius: 11px; font-size: 19px; }
+      .steps { grid-template-columns: 1fr; gap: 10px; }
+      .step { padding: 15px; }
+      .callout { padding: 16px; margin-top: 17px; }
+      .list { padding-left: 20px; }
+      .list li { padding: 5px 0; }
+      .btn { width: 100%; text-align: center; padding: 13px 16px; }
+      footer { padding: 22px 0 30px; }
+    }
+    @media (max-width: 380px) {
+      .wrap { width: calc(100% - 22px); }
+      .hero { padding: 25px 17px 22px; }
+      .card { padding: 18px 15px; }
+      .brand span { max-width: 220px; }
+      .fact { grid-template-columns: 35px minmax(0, 1fr); gap: 9px; }
+      .icon { width: 35px; height: 35px; font-size: 17px; }
+    }
+    @media print {
+      body { background: white; }
+      .hero, .card { box-shadow: none; }
+      .hero { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="wrap">
+    <a class="brand" href="#top" aria-label="Kurs lektorski — strona główna">
+      <div class="brand-mark" aria-hidden="true">†</div>
+      <div><strong>Liturgiczna Służba Ołtarza</strong><span>Dekanat Strzyżowski</span></div>
+    </a>
+  </header>
+
+  <main class="wrap" id="top">
+    <section class="hero" aria-labelledby="title">
+      <div class="eyebrow">Rozwijaj wiarę. Służ Słowu.</div>
+      <h1 id="title">Kurs<br>lektorski</h1>
+      <p>Zaproszenie dla ministrantów, którzy chcą pogłębić swoją relację ze Słowem Bożym i lepiej przygotować się do posługi lektora podczas liturgii.</p>
+      <div class="hero-meta">
+        <span class="pill">📅 23–24 października 2026</span>
+        <span class="pill">📍 Strzyżów</span>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>O kursie</h2>
+        <p>Kurs lektorski organizowany przez <strong>Dekanat Strzyżowski</strong> to okazja do rozwoju duchowego oraz zdobycia wiedzy i praktycznych umiejętności potrzebnych do czytania Słowa Bożego podczas Mszy Świętej i innych celebracji liturgicznych.</p>
+        <p>Uczestnicy będą mogli przyjrzeć się znaczeniu proklamacji Pisma Świętego, zasadom poprawnego czytania oraz temu, jak przygotować się do służby przy ołtarzu w roli lektora.</p>
+        <div class="callout"><strong>„Niech słowo Chrystusa mieszka w was” (Kol 3,16).</strong><br>Niech ten kurs będzie krokiem ku świadomej i odpowiedzialnej posłudze.</div>
+      </section>
+
+      <aside class="card">
+        <h2>Najważniejsze informacje</h2>
+        <div class="facts">
+          <div class="fact"><div class="icon" aria-hidden="true">📅</div><div><strong>Termin i godziny</strong>Piątek, 23 października — rozpoczęcie o godz. 16:00.<br>Sobota, 24 października — kontynuacja od godz. 9:00.</div></div>
+          <div class="fact"><div class="icon" aria-hidden="true">⛪</div><div><strong>Miejsce</strong>Parafia pw. św. bpa Pelczara w Strzyżowie</div></div>
+          <div class="fact"><div class="icon" aria-hidden="true">✝</div><div><strong>Organizator</strong>Dekanat Strzyżowski</div></div>
+          <div class="fact"><div class="icon" aria-hidden="true">💵</div><div><strong>Koszt udziału</strong>50 zł</div></div>
+          <div class="fact"><div class="icon" aria-hidden="true">✍</div><div><strong>Zapisy</strong>U księży opiekunów w parafiach.</div></div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:22px">
+      <h2>Czego możesz się spodziewać?</h2>
+      <div class="steps">
+        <div class="step"><b>01 · Słowo Boże</b><h3>Formacja biblijna</h3><p class="muted">Lepsze poznanie Pisma Świętego i znaczenia czytań w liturgii.</p></div>
+        <div class="step"><b>02 · Praktyka</b><h3>Warsztat lektorski</h3><p class="muted">Praca nad dykcją, tempem, wyrazistością i przygotowaniem tekstu.</p></div>
+        <div class="step"><b>03 · Wspólnota</b><h3>Służba i odpowiedzialność</h3><p class="muted">Rozwijanie wiary oraz świadome podejmowanie posługi w parafii.</p></div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Jak się przygotować?</h2>
+        <ul class="list">
+          <li>Zgłoś chęć udziału u księdza opiekuna LSO w swojej parafii.</li>
+          <li>Przygotuj opłatę za udział w wysokości 50 zł.</li>
+          <li>Zarezerwuj termin: 23–24 października 2026 r. Rozpoczęcie w piątek o godz. 16:00, kontynuacja w sobotę od godz. 9:00.</li>
+        </ul>
+        <p class="notice" style="margin-top:16px">Zapisy prowadzą księża opiekunowie w parafiach.</p>
+      </section>
+      <section class="card faq">
+        <h2>Najczęstsze pytania</h2>
+        <details><summary>Kto organizuje kurs?</summary><p class="muted">Dekanat Strzyżowski.</p></details>
+        <details><summary>Gdzie odbędzie się kurs?</summary><p class="muted">W Parafii pw. św. bpa Pelczara w Strzyżowie.</p></details>
+        <details><summary>Jak się zapisać?</summary><p class="muted">Zgłoś się do księdza opiekuna w swojej parafii.</p></details>
+        <details><summary>Ile kosztuje udział?</summary><p class="muted">Koszt udziału w kursie wynosi 50 zł.</p></details>
+        <details><summary>O której zaczyna się kurs?</summary><p class="muted">W piątek 23 października o 16:00. Kontynuacja odbędzie się w sobotę 24 października od 9:00.</p></details>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:22px; text-align:center">
+      <h2>Dołącz do kursu lektorskiego!</h2>
+      <p class="muted">Przygotuj się do jeszcze pełniejszej służby przy ołtarzu i głoszenia Słowa Bożego.</p>
+      <a class="btn" href="#informacje">Informacje organizacyjne</a>
+      <p id="informacje" class="notice" style="margin:16px 0 0">Zapisy u księży opiekunów w parafiach. Koszt udziału: 50 zł.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <strong>Kurs lektorski · Dekanat Strzyżowski</strong><br>
+      23–24 października 2026 r. · Parafia pw. św. bpa Pelczara w Strzyżowie
+      <p class="notice" style="margin-top:10px">Zapisy: u księży opiekunów w parafiach · Koszt: 50 zł.</p>
+    </div>
+  </footer>
+</body>
+</html>
